@@ -37,10 +37,15 @@ $(function(){
         '系统错误、异常一览表'
     ];
 
-    
+    var article_id=parseInt(location.hash.substr(1,2));
+    if (isNaN(article_id)) {
+        article_id=1;
+    }
+    $('.main h1 strong').html(title[article_id-1]);
+    $('.main .item:eq('+(article_id-1)+')').show();    
 
-    $('.main h1 strong').html(title[0]);
-    $('.main .item:eq(0)').show();
+    //$('.main h1 strong').html(title[0]);
+    //$('.main .item:eq(0)').show();
 
     $('.nav_title').mouseover(function(){
         $('.nav_title dl dd').show();
