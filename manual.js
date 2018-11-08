@@ -27,7 +27,7 @@ $(function(){
         '视图（view） - 模板引擎（template）',
         'java-api代理（proxy）、server-api开发（restful）',
         '数据传输与安全',
-        'web模式、cli模式、计划任务（crontab）',
+        'web模式、cli模式、计划任务（crontab）、监听队列（queue）',
         'websocket、消息推送、即时聊天',
         '测试驱动开发（TDD）、单元测试（unit test）',
         '架构方案、项目部署',
